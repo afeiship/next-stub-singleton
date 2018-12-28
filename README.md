@@ -1,12 +1,19 @@
 # next-stub-singleton
+
 > Stub code for singleton
 
 ## install:
+
 ```bash
 npm install -S afeiship/next-stub-singleton --registry=https://registry.npm.taobao.org
 ```
 
-## usage:
+## stubCode:
+
 ```js
-//DOCS here!
+class App {}
+
+Object.assign(App, nx.stubSingleton());
+
+export default App;
 ```
