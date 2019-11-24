@@ -1,7 +1,7 @@
 {
   "name": "next-stub-singleton",
   "version": "0.0.1",
-  "description": "Stub code for singleton",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-stub-singleton.js",
   "authors": [
     "afei"

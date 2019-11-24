@@ -1,3 +1,11 @@
+/*!
+ * name: @feizheng/next-stub-singleton
+ * url: https://github.com/afeiship/next-stub-singleton
+ * version: 1.0.0
+ * date: 2019-11-24T08:09:56.381Z
+ * license: MIT
+ */
+
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
@@ -18,3 +26,5 @@
     module.exports = nx.stubSingleton;
   }
 })();
+
+//# sourceMappingURL=next-stub-singleton.js.map
