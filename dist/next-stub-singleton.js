@@ -1,8 +1,8 @@
 /*!
  * name: @feizheng/next-stub-singleton
  * url: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.0
- * date: 2019-11-24T08:11:11.475Z
+ * version: 1.0.3
+ * date: 2019-11-24T09:42:41.397Z
  * license: MIT
  */
 
