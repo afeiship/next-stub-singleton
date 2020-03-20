@@ -10,5 +10,19 @@ npm install -S @feizheng/next-stub-singleton
 ```js
 import '@feizheng/next-stub-singleton';
 
-//DOCS here!
+class App {}
+Object.assign(App, nx.stubSingleton());
+export default App;
+
+
+// stub code:
+{
+  instance: null,
+  getInstance: function() {
+    if (!this.instance) {
+      this.instance = new this();
+    }
+    return this.instance;
+  }
+}
 ```
