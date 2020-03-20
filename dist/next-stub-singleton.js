@@ -1,8 +1,9 @@
 /*!
  * name: @feizheng/next-stub-singleton
+ * description: Stub code for singleton.
  * url: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.3
- * date: 2019-11-24T09:42:41.397Z
+ * version: 1.0.0
+ * date: 2020-03-20 20:46:21
  * license: MIT
  */
 
