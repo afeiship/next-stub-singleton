@@ -6,8 +6,10 @@
     return {
       instance: null,
       getInstance: function () {
+        var args = [ null ].concat(nx.slice(arguments));
         if (!this.instance) {
-          this.instance = new (Function.prototype.bind.apply(this, arguments));
+          var Clazz = Function.prototype.bind.apply(this, args);
+          this.instance = new Clazz();
         }
         return this.instance;
       }
