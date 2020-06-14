@@ -26,3 +26,6 @@ export default App;
   }
 }
 ```
+
+## resources
+- https://stackoverflow.com/questions/1606797/use-of-apply-with-new-operator-is-this-possible

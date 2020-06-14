@@ -1,22 +1,22 @@
 /*!
  * name: @feizheng/next-stub-singleton
  * description: Stub code for singleton.
- * url: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.6
- * date: 2020-03-20 20:48:51
+ * homepage: https://github.com/afeiship/next-stub-singleton
+ * version: 1.0.0
+ * date: 2020-06-14T09:56:10.101Z
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
 
-  nx.stubSingleton = function() {
+  nx.stubSingleton = function () {
     return {
       instance: null,
-      getInstance: function() {
+      getInstance: function () {
         if (!this.instance) {
-          this.instance = new this();
+          this.instance = new (Function.prototype.bind.apply(this, arguments));
         }
         return this.instance;
       }
