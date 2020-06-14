@@ -2,8 +2,8 @@
  * name: @feizheng/next-stub-singleton
  * description: Stub code for singleton.
  * homepage: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.0
- * date: 2020-06-14T09:56:10.101Z
+ * version: 1.1.0
+ * date: 2020-06-14T09:56:59.472Z
  * license: MIT
  */
 
