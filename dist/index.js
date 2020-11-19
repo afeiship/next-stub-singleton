@@ -3,7 +3,7 @@
  * description: Stub code for singleton.
  * homepage: https://github.com/afeiship/next-stub-singleton
  * version: 1.0.0
- * date: 2020-11-19 14:05:27
+ * date: 2020-11-19 14:06:19
  * license: MIT
  */
 
