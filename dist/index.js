@@ -2,13 +2,13 @@
  * name: @jswork/next-stub-singleton
  * description: Stub code for singleton.
  * homepage: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.0
- * date: 2020-11-19 14:06:19
+ * version: 1.0.1
+ * date: 2021-01-06 22:40:08
  * license: MIT
  */
 
 (function () {
-  var global = global || this || window || Function('return this')();
+  var global = global || window || Function('return this')();
   var nx = global.nx || require('@jswork/next');
 
   nx.stubSingleton = function () {
