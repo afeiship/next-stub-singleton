@@ -2,8 +2,8 @@
  * name: @jswork/next-stub-singleton
  * description: Stub code for singleton.
  * homepage: https://github.com/afeiship/next-stub-singleton
- * version: 1.0.2
- * date: 2021-04-08 14:59:20
+ * version: 1.0.3
+ * date: 2021-04-08 14:59:53
  * license: MIT
  */
 
