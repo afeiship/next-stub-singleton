@@ -7,6 +7,11 @@
       instance: null,
       getInstance: function () {
         var args = [null].concat(nx.slice(arguments));
+        var Clazz = Function.prototype.bind.apply(this, args);
+        return new Clazz();
+      },
+      getSingleton: function () {
+        var args = [null].concat(nx.slice(arguments));
         if (!this.instance) {
           var Clazz = Function.prototype.bind.apply(this, args);
           this.instance = new Clazz();

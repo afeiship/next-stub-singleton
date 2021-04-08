@@ -23,6 +23,7 @@ export default App;
 // stub code:
 {
   instance: null,
+  getSingleton: function(){},
   getInstance: function() {
     if (!this.instance) {
       this.instance = new this();

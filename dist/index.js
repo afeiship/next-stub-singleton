@@ -3,7 +3,7 @@
  * description: Stub code for singleton.
  * homepage: https://github.com/afeiship/next-stub-singleton
  * version: 1.0.2
- * date: 2021-01-09 16:28:29
+ * date: 2021-04-08 14:59:20
  * license: MIT
  */
 
@@ -15,6 +15,11 @@
     return {
       instance: null,
       getInstance: function () {
+        var args = [null].concat(nx.slice(arguments));
+        var Clazz = Function.prototype.bind.apply(this, args);
+        return new Clazz();
+      },
+      getSingleton: function () {
         var args = [null].concat(nx.slice(arguments));
         if (!this.instance) {
           var Clazz = Function.prototype.bind.apply(this, args);
