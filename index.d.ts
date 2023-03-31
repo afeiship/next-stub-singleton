@@ -1,4 +1,4 @@
-export interface SingletonType {
+interface SingletonType {
   instance: any;
   getInstance: (...args) => any;
   getSingleton: (...args) => any;
