@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-stub-singleton",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stub code for singleton.",
   "homepage": "https://js.work",
   "author": {
@@ -43,5 +43,11 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "stub",
+    "singleton",
+    "instance"
+  ]
 }
