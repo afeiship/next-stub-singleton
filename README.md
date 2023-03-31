@@ -12,14 +12,17 @@ npm install -S @jswork/next-stub-singleton
 ```
 
 ## usage
-```js
+```ts
 import '@jswork/next-stub-singleton';
+import type { InstanceSingleton } from '@jswork/next-stub-singleton';
 
 class App {}
 Object.assign(App, nx.stubSingleton());
 export default App;
 
-
+// in typescript
+(App as any as InstanceSingleton).getInstance();
+(App as any as InstanceSingleton).getSingleton();
 // stub code:
 {
   instance: null,
