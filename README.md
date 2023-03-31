@@ -7,34 +7,25 @@
 [![download][download-image]][download-url]
 
 ## installation
-```bash
-npm install -S @jswork/next-stub-singleton
+```shell
+yarn add @jswork/next-stub-singleton
 ```
 
 ## usage
 ```ts
-import '@jswork/next-stub-singleton';
-import type { SingletonType } from '@jswork/next-stub-singleton';
+import "@jswork/next-stub-singleton";
 
-class App {}
-Object.assign(App, nx.stubSingleton());
-export default App;
-
-// in typescript
-(App as any as SingletonType).getInstance();
-(App as any as SingletonType).getSingleton();
-
-// stub code:
-{
-  instance: null,
-  getSingleton: function(){},
-  getInstance: function() {
-    if (!this.instance) {
-      this.instance = new this();
-    }
-    return this.instance;
+class Person {
+  constructor(public name) {
+    this.name = name;
   }
 }
+
+Object.assign(Person, nx.stubSingleton());
+
+const app = (Person as unknown as SingletonType).getInstance("abc");
+
+console.log(app);
 ```
 
 ## license
