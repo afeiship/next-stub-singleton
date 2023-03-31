@@ -1,7 +1,7 @@
 export interface SingletonType {
   instance: any;
-  getInstance: () => any;
-  getSingleton: () => any;
+  getInstance: (...args) => any;
+  getSingleton: (...args) => any;
 }
 
 interface NxStatic {
