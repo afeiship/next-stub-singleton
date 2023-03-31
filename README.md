@@ -23,6 +23,7 @@ export default App;
 // in typescript
 (App as any as InstanceSingleton).getInstance();
 (App as any as InstanceSingleton).getSingleton();
+
 // stub code:
 {
   instance: null,
